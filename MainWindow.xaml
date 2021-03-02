@@ -1,0 +1,38 @@
+﻿<Window x:Class="MSAD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MSAD"
+        xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        mc:Ignorable="d"
+        Title="Microsoft Authentication Scheme Demo" Height="700" Width="1100">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <wpf:ChromiumWebBrowser Name="Browser" AddressChanged="Browser_OnAddressChanged"/>
+
+        <TextBox Grid.Column="1" Name="OutputText" TextWrapping="Wrap"/>
+    </Grid>
+    <!-- <Grid> -->
+    <!--     <Grid.RowDefinitions> -->
+    <!--         <RowDefinition Height="9*"/> -->
+    <!--         <RowDefinition/> -->
+    <!--     </Grid.RowDefinitions> -->
+    <!-- -->
+    <!--     -->
+    <!-- -->
+    <!--     ~1~ <StackPanel Grid.Row="1" Orientation="Horizontal"> @1@ -->
+    <!--     ~1~     <Button Click="GetCodeButton" Width="100" Content="Get Code" Margin="10"/> @1@ -->
+    <!--     ~1~     <Button Click="ReloadButton" Width="100" Content="Reload" Margin="10"/> @1@ -->
+    <!--     ~1~     <Button Click="TokenAuthorizeButton" Width="100" Content="Token Authorize" Margin="10"/> @1@ -->
+    <!--     ~1~     <Button Click="XBLButton" Width="100" Content="XBL" Margin="10"/> @1@ -->
+    <!--     ~1~     <Button Click="XSTSButton" Width="100" Content="XSTS" Margin="10"/> @1@ -->
+    <!--     ~1~     <Button Click="MinecraftXSTSButton" Width="100" Content="Minecraft Access" Margin="10"/> @1@ -->
+    <!--     ~1~     <Button Click="PropertyButton" Width="100" Content="Property" Margin="10"/> @1@ -->
+    <!--     ~1~     <Button Click="ProfileButton" Width="100" Content="Profile" Margin="10"/> @1@ -->
+    <!--     ~1~ </StackPanel> @1@ -->
+    <!-- </Grid> -->
+</Window>
